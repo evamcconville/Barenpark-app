@@ -1,0 +1,55 @@
+# Things
+Players: 1
+
+# Player board
+coordinates for each square
+[[x-axis], [y-axis]]
+
+each coordinate has property of occupied boolean and occupied-by what
+Board = { 
+    [0, 0]: [occupied: true,
+    occupied-by: "tileOne"], 
+    [0, 1]: [occupied: false,
+    occupied-by: null], 
+    [1, 0]: [occupied: true,
+    occupied-by: "tileTwo"],
+    [1, 1]: [occupied: true,
+    occupied-by: "tileTwo"]
+}
+
+## board layout
+Y0 [0, 0] [0, 1] 
+
+Y1 [1, 0] [1, 1]  
+    X0      X1
+
+### with above example
+Y0 [tileOne] [0, 1] 
+
+Y1 [tileTwo] [tileTwo]  
+    X0         X1
+
+# Tiles
+Shape shows what board coordinates would be occupied which orientaion 
+Tiles: 
+tileBank = {
+    [tileOne: [shape: [0, 0]], 
+    points: 1],
+    [tileTwo: [shape: default:[[0, 0], [0, 1]],
+    ninety: [[0, 0], [0, 1]]], 
+    points: 1]
+    }
+
+## Player itinerary 
+
+## Tile bank
+
+# Round logic
+choose card? - give player itinerary as options
+rotatte card? - give 90, 180, 270, no as options
+place card? - give available coordinates as options 
+
+# available spaces logic
+if board coordinate isn't occupied
+
+# Score logic

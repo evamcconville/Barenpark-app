@@ -1,0 +1,88 @@
+# To think about
+
+Will the tile itself have the property of being somewhere, or will the areas themselves have the property of containing the tile?
+Tiles can be in one of three places; bank, inventory, board.
+
+tile orientation to board
+tile shape property
+adjacent tile placing rule
+
+
+# Things
+Players: 1 / +computer / 2 / 4
+
+# Player board
+Grid: 2x2 / 8x8 / 4x(8x8)
+coordinates for each square
+[[x-axis], [y-axis]]
+
+each coordinate has property of occupied boolean and occupied by what
+[3, 2] = {
+    occupied: true
+    occupied by: "pandaHouse"
+}
+[0, 6] = {
+    occupied: false
+    occupied by: null
+}
+
+## board layout
+Y0 [0, 0] [0, 1] [0, 2] [0, 3] 
+
+Y1 [1, 0] [1, 1] [1, 2] [1, 3] 
+
+Y2 [2, 0] [2, 1] [2, 3] [2, 3] 
+
+Y3 [3, 0] [3, 1] [3, 2] [3, 3] 
+     X0     X1     X2     X3
+
+# Tiles
+Shape shows what board coordinates would be occupied which orientaion 
+Tiles: 
+greenTiles = {
+    greenOne: [shape: [0, 0]
+    type: green, 
+    points: null], 
+
+    greenTwo: [shape: [0, 0], [0, 1]], 
+    greeThree: [shape: [0, 0], [1, 1], [2, 2]], 
+
+    river: [shape: [default: [0, 0], [1, 0], [1, 1]
+    ninety: [0, 0], [0, 1], [1, 0], 
+    oneEighty: [0, 0], [0, 1], [1, 1],
+    twoSeventy: [0, 1], [1, 1], [1, 0]]]
+}
+
+bearHouses = {
+panda: [shape: [], 
+type: pandaHouse,
+points: 1],
+brown: [shape: ],
+polar: [shape: ],
+yellow: [shape: ]
+}
+
+bearEnclosures = {
+panda: [shape: ],
+brown: [shape: ],
+polar: [shape: ],
+yellow: [shape: ]
+}
+
+## Player number starting numbers
+1 / 2 / 4
+
+## Player itinerary 
+
+## Tile bank
+
+# Round logic
+choose tile? - give player itinerary tiles as options
+rotate tile? - give 90, 180, 270, no, as options
+place tile? - give available coordinates as options 
+
+# available spaces logic
+if board coordinate isn't occupied
+
+# Score logic
+
